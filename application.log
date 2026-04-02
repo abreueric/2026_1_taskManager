@@ -1,0 +1,411 @@
+2026-04-02T11:12:44.700-03:00  INFO 34320 --- [AppExample] [restartedMain] b.c.s.t.t.TaskManagerApplication         : Starting TaskManagerApplication using Java 17.0.8 with PID 34320 (C:\Users\eric.sabreu1\Downloads\taskManager\2026_1_taskManager\target\classes started by eric.sabreu1 in C:\Users\eric.sabreu1\Downloads\taskManager\2026_1_taskManager)
+2026-04-02T11:12:44.703-03:00  INFO 34320 --- [AppExample] [restartedMain] b.c.s.t.t.TaskManagerApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T11:12:44.747-03:00  INFO 34320 --- [AppExample] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-02T11:12:44.748-03:00  INFO 34320 --- [AppExample] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-02T11:12:45.157-03:00  INFO 34320 --- [AppExample] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T11:12:45.202-03:00  INFO 34320 --- [AppExample] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interface.
+2026-04-02T11:12:45.753-03:00  INFO 34320 --- [AppExample] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T11:12:45.769-03:00  INFO 34320 --- [AppExample] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T11:12:45.769-03:00  INFO 34320 --- [AppExample] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T11:12:45.810-03:00  INFO 34320 --- [AppExample] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1061 ms
+2026-04-02T11:12:45.999-03:00  INFO 34320 --- [AppExample] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T11:12:46.053-03:00  INFO 34320 --- [AppExample] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T11:12:46.092-03:00 ERROR 34320 --- [AppExample] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.cache.spi.RegionFactory] due to: Unable to resolve name [org.hibernate.cache.jcache.JCacheRegionFactory] as strategy [org.hibernate.cache.spi.RegionFactory]
+2026-04-02T11:12:46.093-03:00  WARN 34320 --- [AppExample] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.cache.spi.RegionFactory] due to: Unable to resolve name [org.hibernate.cache.jcache.JCacheRegionFactory] as strategy [org.hibernate.cache.spi.RegionFactory]
+2026-04-02T11:12:46.094-03:00  INFO 34320 --- [AppExample] [restartedMain] com.zaxxer.hikari.HikariDataSource       : AppHikariCP - Starting...
+2026-04-02T11:12:46.205-03:00  INFO 34320 --- [AppExample] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : AppHikariCP - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-04-02T11:12:46.207-03:00  INFO 34320 --- [AppExample] [restartedMain] com.zaxxer.hikari.HikariDataSource       : AppHikariCP - Start completed.
+2026-04-02T11:12:46.214-03:00  WARN 34320 --- [AppExample] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-04-02T11:12:46.215-03:00  INFO 34320 --- [AppExample] [restartedMain] com.zaxxer.hikari.HikariDataSource       : AppHikariCP - Shutdown initiated...
+2026-04-02T11:12:46.217-03:00  INFO 34320 --- [AppExample] [restartedMain] com.zaxxer.hikari.HikariDataSource       : AppHikariCP - Shutdown completed.
+2026-04-02T11:12:46.219-03:00  INFO 34320 --- [AppExample] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-04-02T11:12:46.225-03:00  INFO 34320 --- [AppExample] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-02T11:12:46.245-03:00 ERROR 34320 --- [AppExample] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.cache.spi.RegionFactory] due to: Unable to resolve name [org.hibernate.cache.jcache.JCacheRegionFactory] as strategy [org.hibernate.cache.spi.RegionFactory]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.5.jar:4.0.5]
+	at br.com.senac.tofudidonopi.taskManager.TaskManagerApplication.main(TaskManagerApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.5.jar:4.0.5]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.cache.spi.RegionFactory] due to: Unable to resolve name [org.hibernate.cache.jcache.JCacheRegionFactory] as strategy [org.hibernate.cache.spi.RegionFactory]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:273) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:235) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:212) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl$MetadataBuildingOptionsImpl.<init>(MetadataBuilderImpl.java:706) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.boot.internal.MetadataBuilderImpl.<init>(MetadataBuilderImpl.java:134) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.boot.MetadataSources.getMetadataBuilder(MetadataSources.java:195) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:224) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:164) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93) ~[spring-orm-7.0.6.jar:7.0.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443) ~[spring-orm-7.0.6.jar:7.0.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436) ~[spring-orm-7.0.6.jar:7.0.6]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411) ~[spring-orm-7.0.6.jar:7.0.6]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419) ~[spring-orm-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813) ~[spring-beans-7.0.6.jar:7.0.6]
+	... 20 common frames omitted
+Caused by: org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [org.hibernate.cache.jcache.JCacheRegionFactory] as strategy [org.hibernate.cache.spi.RegionFactory]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:82) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:176) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:118) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.cache.internal.RegionFactoryInitiator.resolveRegionFactory(RegionFactoryInitiator.java:91) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.cache.internal.RegionFactoryInitiator.initiateService(RegionFactoryInitiator.java:44) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.cache.internal.RegionFactoryInitiator.initiateService(RegionFactoryInitiator.java:30) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:133) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:260) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	... 34 common frames omitted
+Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [org.hibernate.cache.jcache.JCacheRegionFactory]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:88) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:78) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	... 41 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Could not load requested class: org.hibernate.cache.jcache.JCacheRegionFactory
+	at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:198) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:587) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:85) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+	... 42 common frames omitted
+	Suppressed: java.lang.ClassNotFoundException: org.hibernate.cache.jcache.JCacheRegionFactory
+		at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+		at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+		at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+		at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+		at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:123) ~[spring-boot-devtools-4.0.5.jar:4.0.5]
+		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+		at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:202) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+		... 47 common frames omitted
+	Suppressed: java.lang.ClassNotFoundException: org.hibernate.cache.jcache.JCacheRegionFactory
+		at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+		at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+		at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:202) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+		... 47 common frames omitted
+	Suppressed: java.lang.ClassNotFoundException: org.hibernate.cache.jcache.JCacheRegionFactory
+		at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+		at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+		at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+		at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+		at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:123) ~[spring-boot-devtools-4.0.5.jar:4.0.5]
+		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+		at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:202) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+		... 47 common frames omitted
+	Suppressed: java.lang.ClassNotFoundException: org.hibernate.cache.jcache.JCacheRegionFactory
+		at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+		at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+		at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:202) ~[hibernate-core-7.2.7.Final.jar:7.2.7.Final]
+		... 47 common frames omitted
+
+2026-04-02T11:21:02.632-03:00  INFO 21516 --- [taskManager] [restartedMain] b.c.s.t.t.TaskManagerApplication         : Starting TaskManagerApplication using Java 17.0.8 with PID 21516 (C:\Users\eric.sabreu1\Downloads\taskManager\2026_1_taskManager\target\classes started by eric.sabreu1 in C:\Users\eric.sabreu1\Downloads\taskManager\2026_1_taskManager)
+2026-04-02T11:21:02.636-03:00  INFO 21516 --- [taskManager] [restartedMain] b.c.s.t.t.TaskManagerApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T11:21:02.679-03:00  INFO 21516 --- [taskManager] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-02T11:21:02.680-03:00  INFO 21516 --- [taskManager] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-02T11:21:03.115-03:00  INFO 21516 --- [taskManager] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T11:21:03.159-03:00  INFO 21516 --- [taskManager] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
+2026-04-02T11:21:03.707-03:00  INFO 21516 --- [taskManager] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T11:21:03.725-03:00  INFO 21516 --- [taskManager] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T11:21:03.725-03:00  INFO 21516 --- [taskManager] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T11:21:03.765-03:00  INFO 21516 --- [taskManager] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1085 ms
+2026-04-02T11:21:04.060-03:00  INFO 21516 --- [taskManager] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T11:21:04.102-03:00  INFO 21516 --- [taskManager] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T11:21:04.483-03:00  INFO 21516 --- [taskManager] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T11:21:04.518-03:00  INFO 21516 --- [taskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : taskManagerHikariCP - Starting...
+2026-04-02T11:21:04.616-03:00  INFO 21516 --- [taskManager] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : taskManagerHikariCP - Added connection conn0: url=jdbc:h2:mem:taskManagerDatabase user=SA
+2026-04-02T11:21:04.617-03:00  INFO 21516 --- [taskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : taskManagerHikariCP - Start completed.
+2026-04-02T11:21:04.654-03:00  INFO 21516 --- [taskManager] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:taskManagerDatabase]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TASKMANAGERDATABASE/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T11:21:05.084-03:00  INFO 21516 --- [taskManager] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T11:21:05.086-03:00  INFO 21516 --- [taskManager] [restartedMain] org.hibernate.orm.jdbc.batch             : HHH100501: Automatic JDBC statement batching enabled (maximum batch size 20)
+2026-04-02T11:21:05.095-03:00 DEBUG 21516 --- [taskManager] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists tasks cascade 
+2026-04-02T11:21:05.100-03:00 DEBUG 21516 --- [taskManager] [restartedMain] org.hibernate.SQL                        : 
+    create table tasks (
+        priority tinyint not null check ((priority between 0 and 2)),
+        completion_date timestamp(6),
+        creation_date timestamp(6) not null,
+        due_date timestamp(6),
+        id bigint generated by default as identity,
+        description varchar(30),
+        title varchar(30) not null,
+        status enum ('COMPLETED','IN_PROGRESS','PENDING') not null,
+        primary key (id)
+    )
+2026-04-02T11:21:05.111-03:00  INFO 21516 --- [taskManager] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T11:21:05.155-03:00  WARN 21516 --- [taskManager] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T11:21:05.768-03:00  INFO 21516 --- [taskManager] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T11:21:05.950-03:00  WARN 21516 --- [taskManager] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskRepository' defined in br.com.senac.tofudidonopi.taskManager.datasourcerepositories.TaskRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: No property 'dueDateAsc' found for type 'TaskPriority'; Traversed path: Task.priority
+2026-04-02T11:21:05.951-03:00  INFO 21516 --- [taskManager] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T11:21:05.951-03:00 DEBUG 21516 --- [taskManager] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists tasks cascade 
+2026-04-02T11:21:05.955-03:00  WARN 21516 --- [taskManager] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-04-02T11:21:05.955-03:00  INFO 21516 --- [taskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : taskManagerHikariCP - Shutdown initiated...
+2026-04-02T11:21:05.958-03:00  INFO 21516 --- [taskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : taskManagerHikariCP - Shutdown completed.
+2026-04-02T11:21:05.959-03:00  INFO 21516 --- [taskManager] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-04-02T11:21:05.964-03:00  INFO 21516 --- [taskManager] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-02T11:21:05.974-03:00 ERROR 21516 --- [taskManager] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskRepository' defined in br.com.senac.tofudidonopi.taskManager.datasourcerepositories.TaskRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: No property 'dueDateAsc' found for type 'TaskPriority'; Traversed path: Task.priority
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1212) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.5.jar:4.0.5]
+	at br.com.senac.tofudidonopi.taskManager.TaskManagerApplication.main(TaskManagerApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.5.jar:4.0.5]
+Caused by: org.springframework.data.repository.query.QueryCreationException: Cannot create query for method [TaskRepository.findAllOrderByPriorityDueDateAsc(br.com.senac.tofudidonopi.taskManager.domain.entities.TaskPriority)]; No property 'dueDateAsc' found for type 'TaskPriority'; Traversed path: Task.priority
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:109) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:114) ~[spring-data-jpa-4.0.4.jar:4.0.4]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:118) ~[spring-data-jpa-4.0.4.jar:4.0.4]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:291) ~[spring-data-jpa-4.0.4.jar:4.0.4]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:93) ~[spring-data-jpa-4.0.4.jar:4.0.4]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:114) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:102) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:90) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:413) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$1(RepositoryFactoryBeanSupport.java:361) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:136) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.util.Lazy.get(Lazy.java:114) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:370) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:212) ~[spring-data-jpa-4.0.4.jar:4.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813) ~[spring-beans-7.0.6.jar:7.0.6]
+	... 23 common frames omitted
+Caused by: org.springframework.data.core.PropertyReferenceException: No property 'dueDateAsc' found for type 'TaskPriority'; Traversed path: Task.priority
+	at org.springframework.data.core.SimplePropertyPath.<init>(SimplePropertyPath.java:93) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.core.SimplePropertyPath.create(SimplePropertyPath.java:360) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.core.SimplePropertyPath.create(SimplePropertyPath.java:335) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.core.SimplePropertyPath.create(SimplePropertyPath.java:370) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.core.SimplePropertyPath.create(SimplePropertyPath.java:393) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.core.SimplePropertyPath.create(SimplePropertyPath.java:393) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.core.SimplePropertyPath.create(SimplePropertyPath.java:393) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.core.SimplePropertyPath.create(SimplePropertyPath.java:335) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.core.SimplePropertyPath.lambda$from$0(SimplePropertyPath.java:288) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.util.ConcurrentReferenceHashMap$6.execute(ConcurrentReferenceHashMap.java:387) ~[spring-core-7.0.6.jar:7.0.6]
+	at org.springframework.util.ConcurrentReferenceHashMap$Segment.doTask(ConcurrentReferenceHashMap.java:681) ~[spring-core-7.0.6.jar:7.0.6]
+	at org.springframework.util.ConcurrentReferenceHashMap.doTask(ConcurrentReferenceHashMap.java:565) ~[spring-core-7.0.6.jar:7.0.6]
+	at org.springframework.util.ConcurrentReferenceHashMap.computeIfAbsent(ConcurrentReferenceHashMap.java:381) ~[spring-core-7.0.6.jar:7.0.6]
+	at org.springframework.data.core.SimplePropertyPath.from(SimplePropertyPath.java:270) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.core.PropertyPath.from(PropertyPath.java:210) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.core.PropertyPath.from(PropertyPath.java:193) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:260) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:261) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:390) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:391) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:104) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:108) ~[spring-data-jpa-4.0.4.jar:4.0.4]
+	... 37 common frames omitted
+
+2026-04-02T11:23:54.234-03:00  INFO 61212 --- [taskManager] [restartedMain] b.c.s.t.t.TaskManagerApplication         : Starting TaskManagerApplication using Java 17.0.8 with PID 61212 (C:\Users\eric.sabreu1\Downloads\taskManager\2026_1_taskManager\target\classes started by eric.sabreu1 in C:\Users\eric.sabreu1\Downloads\taskManager\2026_1_taskManager)
+2026-04-02T11:23:54.238-03:00 DEBUG 61212 --- [taskManager] [restartedMain] b.c.s.t.t.TaskManagerApplication         : Running with Spring Boot v4.0.5, Spring v7.0.6
+2026-04-02T11:23:54.238-03:00  INFO 61212 --- [taskManager] [restartedMain] b.c.s.t.t.TaskManagerApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-04-02T11:23:54.284-03:00  INFO 61212 --- [taskManager] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-02T11:23:54.285-03:00  INFO 61212 --- [taskManager] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-02T11:23:54.760-03:00  INFO 61212 --- [taskManager] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-02T11:23:54.806-03:00  INFO 61212 --- [taskManager] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
+2026-04-02T11:23:55.371-03:00  INFO 61212 --- [taskManager] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-02T11:23:55.384-03:00  INFO 61212 --- [taskManager] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-02T11:23:55.384-03:00  INFO 61212 --- [taskManager] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-02T11:23:55.419-03:00  INFO 61212 --- [taskManager] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1133 ms
+2026-04-02T11:23:55.619-03:00  INFO 61212 --- [taskManager] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-02T11:23:55.654-03:00  INFO 61212 --- [taskManager] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-02T11:23:55.973-03:00  INFO 61212 --- [taskManager] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-02T11:23:55.994-03:00  INFO 61212 --- [taskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : taskManagerHikariCP - Starting...
+2026-04-02T11:23:56.081-03:00  INFO 61212 --- [taskManager] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : taskManagerHikariCP - Added connection conn0: url=jdbc:h2:mem:taskManagerDatabase user=SA
+2026-04-02T11:23:56.082-03:00  INFO 61212 --- [taskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : taskManagerHikariCP - Start completed.
+2026-04-02T11:23:56.114-03:00  INFO 61212 --- [taskManager] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:taskManagerDatabase]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TASKMANAGERDATABASE/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-02T11:23:56.546-03:00  INFO 61212 --- [taskManager] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-02T11:23:56.548-03:00  INFO 61212 --- [taskManager] [restartedMain] org.hibernate.orm.jdbc.batch             : HHH100501: Automatic JDBC statement batching enabled (maximum batch size 20)
+2026-04-02T11:23:56.557-03:00 DEBUG 61212 --- [taskManager] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists tasks cascade 
+2026-04-02T11:23:56.561-03:00 DEBUG 61212 --- [taskManager] [restartedMain] org.hibernate.SQL                        : 
+    create table tasks (
+        priority tinyint not null check ((priority between 0 and 2)),
+        completion_date timestamp(6),
+        creation_date timestamp(6) not null,
+        due_date timestamp(6),
+        id bigint generated by default as identity,
+        description varchar(30),
+        title varchar(30) not null,
+        status enum ('COMPLETED','IN_PROGRESS','PENDING') not null,
+        primary key (id)
+    )
+2026-04-02T11:23:56.570-03:00  INFO 61212 --- [taskManager] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T11:23:56.623-03:00  WARN 61212 --- [taskManager] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-02T11:23:57.249-03:00  INFO 61212 --- [taskManager] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-02T11:23:57.445-03:00  WARN 61212 --- [taskManager] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskRepository' defined in br.com.senac.tofudidonopi.taskManager.datasourcerepositories.TaskRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: No property 'dueDateAsc' found for type 'TaskPriority'; Traversed path: Task.priority
+2026-04-02T11:23:57.446-03:00  INFO 61212 --- [taskManager] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-02T11:23:57.446-03:00 DEBUG 61212 --- [taskManager] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists tasks cascade 
+2026-04-02T11:23:57.450-03:00  WARN 61212 --- [taskManager] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-04-02T11:23:57.450-03:00  INFO 61212 --- [taskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : taskManagerHikariCP - Shutdown initiated...
+2026-04-02T11:23:57.451-03:00  INFO 61212 --- [taskManager] [restartedMain] com.zaxxer.hikari.HikariDataSource       : taskManagerHikariCP - Shutdown completed.
+2026-04-02T11:23:57.453-03:00  INFO 61212 --- [taskManager] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-04-02T11:23:57.458-03:00  INFO 61212 --- [taskManager] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-02T11:23:57.467-03:00 ERROR 61212 --- [taskManager] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'taskRepository' defined in br.com.senac.tofudidonopi.taskManager.datasourcerepositories.TaskRepository defined in @EnableJpaRepositories declared on DataJpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: No property 'dueDateAsc' found for type 'TaskPriority'; Traversed path: Task.priority
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1817) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1212) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.6.jar:7.0.6]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-web-server-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.5.jar:4.0.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.5.jar:4.0.5]
+	at br.com.senac.tofudidonopi.taskManager.TaskManagerApplication.main(TaskManagerApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:52) ~[spring-boot-devtools-4.0.5.jar:4.0.5]
+Caused by: org.springframework.data.repository.query.QueryCreationException: Cannot create query for method [TaskRepository.findAllOrderByPriorityDueDateAsc(br.com.senac.tofudidonopi.taskManager.domain.entities.TaskPriority)]; No property 'dueDateAsc' found for type 'TaskPriority'; Traversed path: Task.priority
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:109) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:114) ~[spring-data-jpa-4.0.4.jar:4.0.4]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:118) ~[spring-data-jpa-4.0.4.jar:4.0.4]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:291) ~[spring-data-jpa-4.0.4.jar:4.0.4]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:93) ~[spring-data-jpa-4.0.4.jar:4.0.4]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:114) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:102) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:90) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:413) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$1(RepositoryFactoryBeanSupport.java:361) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:136) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.util.Lazy.get(Lazy.java:114) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:370) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:212) ~[spring-data-jpa-4.0.4.jar:4.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1864) ~[spring-beans-7.0.6.jar:7.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1813) ~[spring-beans-7.0.6.jar:7.0.6]
+	... 23 common frames omitted
+Caused by: org.springframework.data.core.PropertyReferenceException: No property 'dueDateAsc' found for type 'TaskPriority'; Traversed path: Task.priority
+	at org.springframework.data.core.SimplePropertyPath.<init>(SimplePropertyPath.java:93) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.core.SimplePropertyPath.create(SimplePropertyPath.java:360) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.core.SimplePropertyPath.create(SimplePropertyPath.java:335) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.core.SimplePropertyPath.create(SimplePropertyPath.java:370) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.core.SimplePropertyPath.create(SimplePropertyPath.java:393) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.core.SimplePropertyPath.create(SimplePropertyPath.java:393) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.core.SimplePropertyPath.create(SimplePropertyPath.java:393) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.core.SimplePropertyPath.create(SimplePropertyPath.java:335) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.core.SimplePropertyPath.lambda$from$0(SimplePropertyPath.java:288) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.util.ConcurrentReferenceHashMap$6.execute(ConcurrentReferenceHashMap.java:387) ~[spring-core-7.0.6.jar:7.0.6]
+	at org.springframework.util.ConcurrentReferenceHashMap$Segment.doTask(ConcurrentReferenceHashMap.java:681) ~[spring-core-7.0.6.jar:7.0.6]
+	at org.springframework.util.ConcurrentReferenceHashMap.doTask(ConcurrentReferenceHashMap.java:565) ~[spring-core-7.0.6.jar:7.0.6]
+	at org.springframework.util.ConcurrentReferenceHashMap.computeIfAbsent(ConcurrentReferenceHashMap.java:381) ~[spring-core-7.0.6.jar:7.0.6]
+	at org.springframework.data.core.SimplePropertyPath.from(SimplePropertyPath.java:270) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.core.PropertyPath.from(PropertyPath.java:210) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.core.PropertyPath.from(PropertyPath.java:193) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:260) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:261) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:390) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:391) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:104) ~[spring-data-commons-4.0.4.jar:4.0.4]
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:108) ~[spring-data-jpa-4.0.4.jar:4.0.4]
+	... 37 common frames omitted
+
